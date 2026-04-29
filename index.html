@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <title>My Website</title>
@@ -12,6 +12,9 @@
       color: white;
       margin: 0;
       height: 100vh;
+      text-align: center;
+      font-family: Arial;
+      padding-top: 80px;
     }
 
     button {
@@ -36,16 +39,17 @@
       font-size: 18px;
     }
   </style>
-</head>
-
-<body style="text-align:center; font-family:Arial; margin-top:80px;">
-  <h1>👋 Welcome</h1>
-  <p id="tip">Click continue</p>
-  <button onclick="go()">Continue</button>
 
   <script>
     function go() {
       window.location.href = "https://discord.gg/ftegAhGqq";
     }
+  </script>
 </head>
 
+<body>
+  <h1>👋 Welcome</h1>
+  <p>Click continue to join our Discord</p>
+  <button onclick="go()">Continue</button>
+</body>
+</html>
