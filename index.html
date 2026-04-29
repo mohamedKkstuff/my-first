@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Website</title>
-  
+  <title>My Rainbow Website</title>
   <style>
     body {
-      background: linear-gradient(45deg, 
+      background: linear-gradient(270deg, 
         red, orange, yellow, green, blue, indigo, violet);
       background-size: 400% 400%;
       animation: gradient 10s ease infinite;
       color: white;
       margin: 0;
       height: 100vh;
-      text-align: center;
-      font-family: Arial;
-      padding-top: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
     }
 
     button {
       background-color: #4CAF50;
       color: white;
       border: none;
-      padding: 10px 20px;
+      padding: 15px 30px;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 18px;
+      border-radius: 5px;
     }
 
     button:hover {
@@ -36,20 +38,26 @@
 
     p {
       margin-bottom: 30px;
-      font-size: 18px;
+      font-size: 20px;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
   </style>
-
-  <script>
-    function go() {
-      window.location.href = "https://discord.gg/ftegAhGqq";
-    }
-  </script>
 </head>
 
 <body>
   <h1>👋 Welcome</h1>
   <p>Click continue to join our Discord</p>
   <button onclick="go()">Continue</button>
+
+  <script>
+    function go() {
+      window.location.href = "https://discord.gg/ftegAhGqq";
+    }
+  </script>
 </body>
 </html>
