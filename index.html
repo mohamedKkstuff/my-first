@@ -1,21 +1,51 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
   <title>My Website</title>
+  
+  <style>
+    body {
+      background: linear-gradient(45deg, 
+        red, orange, yellow, green, blue, indigo, violet);
+      background-size: 400% 400%;
+      animation: gradient 10s ease infinite;
+      color: white;
+      margin: 0;
+      height: 100vh;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+  </style>
 </head>
 
 <body style="text-align:center; font-family:Arial; margin-top:80px;">
-
   <h1>👋 Welcome</h1>
-  <p>Click continue to proceed</p>
-
+  <p id="tip">Click continue</p>
   <button onclick="go()">Continue</button>
 
   <script>
     function go() {
       window.location.href = "https://discord.gg/ftegAhGqq";
     }
-  </script>
+</head>
 
-</body>
-</html>
